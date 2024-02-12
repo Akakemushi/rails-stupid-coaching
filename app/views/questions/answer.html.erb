@@ -1,9 +1,23 @@
-<h1>Stupid Coaching</h1>
-<div>
-  <p><%= @message %></p>
-  <p><em>- You</em></p>
+<div class="card">
+  <div class="card-header">
+    <%= Time.now %>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p><%= @message %></p>
+      <footer class="blockquote-footer"><cite title="Source Title">You</cite></footer>
+    </blockquote>
+  </div>
 </div>
-<div>
-  <p><%= @answer %></p>
-  <p><em>- Your coach</em></p>
+<div class="card">
+  <div class="card-header">
+    <%= Time.now %>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p><%= @answer %></p>
+      <footer class="blockquote-footer"><cite title="Source Title">Your Coach</cite></footer>
+    </blockquote>
+  </div>
 </div>
+<%= link_to("Ask another question", ask_path) %>

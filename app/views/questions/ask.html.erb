@@ -1,5 +1,9 @@
-<h1>Hi, I'm a question.</h1>
-<form action="/answer" data-turbo="false">
-  <input class="submit" type="submit" value="Ask!">
-  <input class="textbox" type="text" name="question">
-</form>
+<div>
+  <p>Ask your coach anything.</p>
+  <form class="container d-flex justify-content-start px-0" action="/answer" data-turbo="false">
+    <div class="input-group mb-3 justify-content-start">
+      <input type="text" class="form-control" name="question" placeholder="What time is is?" aria-label="Question" aria-describedby="button-addon2">
+      <button class="btn btn-primary" type="submit" id="button-addon2">Button</button>
+    </div>
+  </form>
+</div>
